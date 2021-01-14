@@ -29,7 +29,7 @@ fun build() : Git= Git(user_name, sobre_name, reposi_name, repsoi_text, star_ico
 
 fun git(block: GitBuilder.()-> Unit): Git=GitBuilder().apply(block).build()
 
-fun fakeGitEmaisls()=listOf(
+fun fakeGitEmaisls():MutableList<Git> = mutableListOf(
 git {
 user_name =" Victor Hugo"
     sobre_name=" Andrade Diniz de Araujo"
