@@ -22,7 +22,7 @@
     android:layout_height="48dp"
 android:background="@drawable/circle"
     tools:src="@drawable/usuario"
-    android:layout_marginEnd="30dp"/>
+    android:layout_marginEnd="26dp"/>
     <TextView
         android:id="@+id/user_name"
         android:layout_width="match_parent"
@@ -30,6 +30,7 @@ android:background="@drawable/circle"
         android:layout_alignStart="@id/img_icon"
         android:layout_below="@id/img_icon"
         android:textColor="@color/azul"
+        android:textSize="16sp"
        tools:text="username" />
     <TextView
         android:id="@+id/sobre_name"
@@ -39,6 +40,7 @@ android:background="@drawable/circle"
         android:layout_below="@id/user_name"
         android:textColor="@color/gray"
         android:singleLine="true"
+        android:textSize="9sp"
         tools:text="Nome Sobrenome" />
 </RelativeLayout>
     
