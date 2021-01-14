@@ -21,15 +21,15 @@
             android:layout_height="wrap_content">
 
         </androidx.appcompat.widget.Toolbar>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_main"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            android:layout_below="@id/app_bar"
             android:layout_width="match_parent"
-            tools:listitem="@layout/item_git"
-            android:layout_height="match_parent"
+            android:layout_height="668dp"
+            android:layout_below="@id/app_bar"
             android:background="@color/white"
-            />
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_git" />
 
     </com.google.android.material.appbar.AppBarLayout>
 </LinearLayout>
