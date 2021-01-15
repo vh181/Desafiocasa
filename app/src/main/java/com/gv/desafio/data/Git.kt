@@ -31,8 +31,8 @@ fun git(block: GitBuilder.()-> Unit): Git=GitBuilder().apply(block).build()
 
 fun fakeGit():MutableList<Git> = mutableListOf(
         git {
-            user_name =" Victor Hugo"
-            sobre_name=" Andrade Diniz de Araujo"
+            user_name ="Victor Hugo"
+            sobre_name="Andrade Diniz de Araujo"
             reposi_name="Desafio do carlos"
             repsoi_text=" Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
             star_icon=true
@@ -43,8 +43,8 @@ fun fakeGit():MutableList<Git> = mutableListOf(
 
         },
         git {
-            user_name =" Amanda"
-            sobre_name=" Andrade Diniz de Araujo"
+            user_name ="Amanda"
+            sobre_name="Andrade Diniz de Araujo"
             reposi_name="Carlos"
             repsoi_text=" Descreve foro imaginário onde são apontados diversos aspectos da discussão de um projeto de informação para um país fictício no início do século XXI. Por meio do discurso dos personagens, apresenta a pluralidade de conceitos que caracteriza esse debate: da difusão do conhecimento científico-tecnológico à ampla disponibilização de informações de interesse dos diversos segmentos da sociedade civil."
             star_icon=true
@@ -56,7 +56,7 @@ fun fakeGit():MutableList<Git> = mutableListOf(
         },
         git {
             user_name ="Ana Carla"
-            sobre_name=" Andrade Diniz de Araujo"
+            sobre_name="Andrade Diniz de Araujo"
             reposi_name="Desafio"
             repsoi_text="Describe el foro imaginario donde son senalados diversos aspectos de la discusión de un proyecto de información para un país ficticio a principios del siglo XXI. A través dei discurso de los personajes, prescnta la pluralidad de conceptos que caracteriza ese debate: de la difusión del conocimiento científicotecnológico a la amplia disponibilidad de informaciones de interés de los diversos segmentos de la sociedad civil. "
             star_icon=true

@@ -24,7 +24,15 @@ holder.bind(git[position])
     inner class  GitViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView){
         fun bind(git: Git) {
             with(git){
-                itemView.user_name.text= user_name.first().toString()
+                itemView.img_icon.setImageResource(R.drawable.usuario)
+                itemView.user_name.text=user_name
+                itemView.sobre_name.text=sobre_name
+                itemView.reposi_name.text=reposi_name
+                itemView.repsoi_text.text=repsoi_text
+                itemView.n_git.text=n_git
+                itemView.n_star.text=n_star
+                itemView.git_icon.setImageResource(R.drawable.ic_share)
+                itemView.star_icon.setImageResource(R.drawable.ic_star)
             }
 
 
