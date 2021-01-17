@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
 
-        recycler_view_main.adapter=GitAdapter(fakeGit())
+        recycler_view_main.adapter = GitAdapter(fakeGit())
         recycler_view_main.layoutManager = LinearLayoutManager(this)
     }
 }
