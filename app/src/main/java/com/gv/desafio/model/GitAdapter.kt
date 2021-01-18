@@ -3,6 +3,8 @@ package com.gv.desafio.model
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.gv.desafio.R
 import com.gv.desafio.data.Git
@@ -18,27 +20,23 @@ class GitAdapter( private val  git: MutableList<Git>) : RecyclerView.Adapter<Git
     override fun getItemCount(): Int = git.size
 
 
-    override fun onBindViewHolder(holder: GitViewHolder, position: Int) {
-        holder.bind(git[position])
-    }
+
 
     inner class GitViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(git: Git) {
-            with(git) {
-                itemView.img_icon.setImageResource(R.drawable.usuario)
-                itemView.user_name.text = userName
-                itemView.sobre_name.text = sobreName
-                itemView.reposi_name.text = reposiName
-                itemView.repsoi_text.text = reposiText
-                itemView.n_git.text = nGit
-                itemView.n_star.text = nStar
-                itemView.git_icon.setImageResource(R.drawable.ic_share)
-                itemView.star_icon.setImageResource(R.drawable.ic_star)
-            }
+        var imagIcon: ImageView = itemView.findViewById(R.id.img_icon)
+        var userName: TextView = itemView.findViewById(R.id.user_name)
+        var sobreName: TextView = itemView.findViewById(R.id.sobre_name)
+        var reposiName: TextView = itemView.findViewById(R.id.reposi_name)
+        var reposiText: TextView = itemView.findViewById(R.id.repsoi_text)
+        var nGit: TextView = itemView.findViewById(R.id.n_git)
+        var nStar: TextView = itemView.findViewById(R.id.n_star)
+        var gitIcon: ImageView = itemView.findViewById(R.id.img_icon)
+        var starIcon: ImageView = itemView.findViewById(R.id.img_icon)
 
 
-        }
 
+}
+    override fun onBindViewHolder(holder: GitViewHolder, position: Int) {
+        holder.imagIcon.setImageResource(R.drawable.usuario)
     }
-
 }
