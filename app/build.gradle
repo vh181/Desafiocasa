@@ -8,6 +8,8 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.0"
 
+    viewBinding.enabled=true
+
     defaultConfig {
         applicationId "com.gv.desafio_carlo"
         minSdkVersion 19
