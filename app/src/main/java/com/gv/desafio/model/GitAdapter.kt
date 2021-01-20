@@ -23,20 +23,27 @@ class GitAdapter( private val  git: MutableList<Git>) : RecyclerView.Adapter<Git
 
 
     inner class GitViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var imagIcon: ImageView = itemView.findViewById(R.id.img_icon)
-        var userName: TextView = itemView.findViewById(R.id.user_name)
-        var sobreName: TextView = itemView.findViewById(R.id.sobre_name)
-        var reposiName: TextView = itemView.findViewById(R.id.reposi_name)
-        var reposiText: TextView = itemView.findViewById(R.id.repsoi_text)
-        var nGit: TextView = itemView.findViewById(R.id.n_git)
-        var nStar: TextView = itemView.findViewById(R.id.n_star)
-        var gitIcon: ImageView = itemView.findViewById(R.id.img_icon)
-        var starIcon: ImageView = itemView.findViewById(R.id.img_icon)
+        var imagIcon_GitAdapter: ImageView = itemView.findViewById(R.id.imgIcon_xml)
+        var userName_GitAdapter: TextView = itemView.findViewById(R.id.userName_xml)
+        var sobreName_GitAdapter: TextView = itemView.findViewById(R.id.sobreName_xml)
+        var repositorioName_GitAdapter: TextView = itemView.findViewById(R.id.repositorioName_xml)
+        var reposiorioText_GitAdapter: TextView = itemView.findViewById(R.id.repositorioText_xml)
+        var numeroGit_GitAdapter: TextView = itemView.findViewById(R.id.numeroGit_xml)
+        var numeroStar_GitAdapter: TextView = itemView.findViewById(R.id.numeroStar_xml)
+        var gitIcon_GitAdapter: ImageView = itemView.findViewById(R.id.gitIcon_xml)
+        var starIcon_GitAdapter: ImageView = itemView.findViewById(R.id.starIcon_xml)
+        fun bind() {
+            imagIcon_GitAdapter.setImageResource(R.drawable.usuario)
+            userName_GitAdapter.text
+        }
+
+
 
 
 
 }
     override fun onBindViewHolder(holder: GitViewHolder, position: Int) {
-        holder.imagIcon.setImageResource(R.drawable.usuario)
+        holder.bind()
+
     }
 }

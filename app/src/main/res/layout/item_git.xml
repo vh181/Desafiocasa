@@ -16,7 +16,7 @@
         android:layout_marginBottom="16dp">
 
         <ImageView
-            android:id="@+id/img_icon"
+            android:id="@+id/imgIcon_xml"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_alignParentTop="true"
@@ -28,7 +28,7 @@
             tools:src="@drawable/usuario" />
 
         <TextView
-            android:id="@+id/user_name"
+            android:id="@+id/userName_xml"
             android:layout_width="72dp"
             android:layout_height="19dp"
             android:layout_below="@id/img_icon"
@@ -41,9 +41,8 @@
             app:layout_constraintTop_toBottomOf="@+id/img_icon"
             app:layout_constraintVertical_bias="0.0"
             tools:text="username" />
-
         <TextView
-            android:id="@+id/sobre_name"
+            android:id="@+id/sobreName_xml"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/user_name"
@@ -54,7 +53,7 @@
             tools:text="Nome Sobrenome" />
 
         <TextView
-            android:id="@+id/reposi_name"
+            android:id="@+id/repositorioName_xml"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -64,7 +63,7 @@
             tools:text="Nome Repositório" />
 
         <TextView
-            android:id="@+id/repsoi_text"
+            android:id="@+id/repositorioText_xml"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/reposi_name"
@@ -76,7 +75,7 @@
             tools:text="Os usuários ou utilizadores são pessoas ou organizações que utilizam um determinado tipo de serviço e podem ser classificados segundo a área de interesse." />
 
         <ImageView
-            android:id="@+id/star_icon"
+            android:id="@+id/starIcon_xml"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_alignParentLeft="true"
@@ -85,7 +84,7 @@
             tools:src="@drawable/ic_star" />
 
         <ImageView
-            android:id="@+id/git_icon"
+            android:id="@+id/gitIcon_xml"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_alignStart="@id/reposi_name"
@@ -96,7 +95,7 @@
             tools:src="@drawable/ic_share" />
 
         <TextView
-            android:id="@+id/n_git"
+            android:id="@+id/numeroGit_xml"
             android:layout_width="264dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -109,7 +108,7 @@
             tools:text="640" />
 
         <TextView
-            android:id="@+id/n_star"
+            android:id="@+id/numeroStar_xml"
             android:layout_width="217dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
