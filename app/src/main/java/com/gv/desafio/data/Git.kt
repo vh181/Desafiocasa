@@ -31,111 +31,111 @@ fun git(block: GitBuilder.()-> Unit): Git=GitBuilder().apply(block).build()
 
 fun fakeGit():MutableList<Git> = mutableListOf(
         git {
-            userName = "Victor Hugo"
-            sobreName = "Andrade Diniz de Araujo"
-            reposiName = "Desafio do carlos"
-            reposiText = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "55"
-            nStar = "99"
+            userName_Git = "Victor Hugo"
+            sobreName_Git = "Andrade Diniz de Araujo"
+            repositorioName_Git = "Desafio do carlos"
+            repositorioText_Git = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git= true
+            numeroGit_Git = "55"
+            numeroStar_Git = "99"
 
         },
         git {
-            userName = "Amanda"
-            sobreName = "Andrade Diniz de Araujo"
-            reposiName = "Carlos"
-            reposiText = " Descreve foro imaginário onde são apontados diversos aspectos da discussão de um projeto de informação para um país fictício no início do século XXI. Por meio do discurso dos personagens, apresenta a pluralidade de conceitos que caracteriza esse debate: da difusão do conhecimento científico-tecnológico à ampla disponibilização de informações de interesse dos diversos segmentos da sociedade civil."
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "99"
-            nStar = "199"
+            userName_Git = "Amanda"
+            sobreName_Git = "Andrade Diniz de Araujo"
+            repositorioName_Git = "Carlos"
+            repositorioText_Git = " Descreve foro imaginário onde são apontados diversos aspectos da discussão de um projeto de informação para um país fictício no início do século XXI. Por meio do discurso dos personagens, apresenta a pluralidade de conceitos que caracteriza esse debate: da difusão do conhecimento científico-tecnológico à ampla disponibilização de informações de interesse dos diversos segmentos da sociedade civil."
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "99"
+            numeroStar_Git = "199"
 
         },
         git {
-            userName = "Ana Carla"
-            sobreName = "Andrade Diniz de Araujo"
-            reposiName = "Desafio"
-            reposiText = "Describe el foro imaginario donde son senalados diversos aspectos de la discusión de un proyecto de información para un país ficticio a principios del siglo XXI. A través dei discurso de los personajes, prescnta la pluralidad de conceptos que caracteriza ese debate: de la difusión del conocimiento científicotecnológico a la amplia disponibilidad de informaciones de interés de los diversos segmentos de la sociedad civil. "
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "75"
-            nStar = "129"
+            userName_Git = "Ana Carla"
+            sobreName_Git = "Andrade Diniz de Araujo"
+            repositorioName_Git = "Desafio"
+            repositorioText_Git = "Describe el foro imaginario donde son senalados diversos aspectos de la discusión de un proyecto de información para un país ficticio a principios del siglo XXI. A través dei discurso de los personajes, prescnta la pluralidad de conceptos que caracteriza ese debate: de la difusión del conocimiento científicotecnológico a la amplia disponibilidad de informaciones de interés de los diversos segmentos de la sociedad civil. "
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "75"
+            numeroStar_Git = "129"
 
         },
         git {
-            userName = "Cleber"
-            sobreName = "Andrade Diniz de Araujo"
-            reposiName = "Estudo"
-            reposiText = "A leitura e a escrita como práticas sociais envolvem processos discursivos e cognitivos. Por isso, toma-se a leitura como um momento uma ação de produção de sentidos em atividade de interlocução e compreensão responsiva. Assim como observa-se a escrita como um processo de interlocução e de interação social. Uma leitura significativa subsidia significativamente uma nova escrita, dado o movimento de escrita está arrolado na retextualização da leitura. Concebe-se, assim, a retextualização como um processo de produção textual significativa, no qual mobiliza funções linguísti"
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "155"
-            nStar = "299"
+            userName_Git = "Cleber"
+            sobreName_Git = "Andrade Diniz de Araujo"
+            repositorioName_Git = "Estudo"
+            repositorioText_Git = "A leitura e a escrita como práticas sociais envolvem processos discursivos e cognitivos. Por isso, toma-se a leitura como um momento uma ação de produção de sentidos em atividade de interlocução e compreensão responsiva. Assim como observa-se a escrita como um processo de interlocução e de interação social. Uma leitura significativa subsidia significativamente uma nova escrita, dado o movimento de escrita está arrolado na retextualização da leitura. Concebe-se, assim, a retextualização como um processo de produção textual significativa, no qual mobiliza funções linguísti"
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "155"
+            numeroStar_Git = "299"
 
         },
         git {
-            userName = "Pipoca"
-            sobreName = "Andrade Diniz de Araujo"
-            reposiName = "Comida"
-            reposiText = "ritings. In this way, this work supports new writing so helpful to let the pupils develop the retextualization process , used as a practice of reading and writing which mobilize linguistic cognitive function and textual linguistic and disc"
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "355"
-            nStar = "49"
+            userName_Git = "Pipoca"
+            sobreName_Git = "Andrade Diniz de Araujo"
+            repositorioName_Git = "Comida"
+            repositorioText_Git = "ritings. In this way, this work supports new writing so helpful to let the pupils develop the retextualization process , used as a practice of reading and writing which mobilize linguistic cognitive function and textual linguistic and disc"
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "355"
+            numeroStar_Git = "49"
 
         },
         git {
-            userName = "Carlos"
-            sobreName = "Gente Fina"
-            reposiName = "Loucura"
-            reposiText = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "200"
-            nStar = "200"
+            userName_Git = "Carlos"
+            sobreName_Git = "Gente Fina"
+            repositorioName_Git = "Loucura"
+            repositorioText_Git = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "200"
+            numeroStar_Git = "200"
 
         },
         git {
-            userName = "Bruno"
-            sobreName = "Araujo"
-            reposiName = "Pratos de Comida"
-            reposiText = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "350"
-            nStar = "599"
+            userName_Git = "Bruno"
+            sobreName_Git = "Araujo"
+            repositorioName_Git = "Pratos de Comida"
+            repositorioText_Git = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "350"
+            numeroStar_Git = "599"
 
         },
         git {
-            userName = "Jerson"
-            sobreName = "Diniz"
-            reposiName = "Eletricidade"
-            reposiText = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "60"
-            nStar = "37"
+            userName_Git = "Jerson"
+            sobreName_Git = "Diniz"
+            repositorioName_Git = "Eletricidade"
+            repositorioText_Git = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "60"
+            numeroStar_Git = "37"
 
         },
         git {
-            userName = "Kaio"
-            sobreName = "Araujo"
-            reposiName = "Desafio do carlos"
-            reposiText = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
-            starIcon = true
-            gitIcon = true
-            imgIcon = true
-            nGit = "55"
-            nStar = "99"
+            userName_Git = "Kaio"
+            sobreName_Git = "Araujo"
+            repositorioName_Git = "Desafio do carlos"
+            repositorioText_Git = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
+            starIcon_Git = true
+            gitIcon_Git = true
+            imagemIcon_Git = true
+            numeroGit_Git = "55"
+            numeroStar_Git = "99"
 
         }
 
