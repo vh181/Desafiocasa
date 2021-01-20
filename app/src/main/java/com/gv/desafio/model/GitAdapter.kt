@@ -34,7 +34,7 @@ class GitAdapter(private val git: MutableList<Git>) : RecyclerView.Adapter<GitAd
             with(git) {
                 imagemIcon_GitAdapter.setImageResource(R.drawable.usuario)
                 userName_GitAdapter.text = userName_Git
-                sobreName_GitAdapter.text = sobreName_Git
+               sobreName_GitAdapter.text = sobreName_Git
                 repositorioName_GitAdapter.text = repositorioName_Git
                 reposiorioText_GitAdapter.text = repositorioText_Git
                 numeroGit_GitAdapter.text = numeroGit_Git

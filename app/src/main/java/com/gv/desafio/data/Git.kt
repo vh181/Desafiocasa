@@ -23,7 +23,7 @@ class GitBuilder {
     var numeroStar_Git: String = ""
     var imagemIcon_Git: Boolean = true
 
-    fun build(): Git = Git(userName_Git, repositorioName_Git, sobreName_Git, repositorioText_Git, starIcon_Git, gitIcon_Git, numeroGit_Git, numeroStar_Git, imagemIcon_Git)
+    fun build(): Git = Git(userName_Git, sobreName_Git,repositorioName_Git,  repositorioText_Git, starIcon_Git, gitIcon_Git, numeroGit_Git, numeroStar_Git, imagemIcon_Git)
 
 }
 
