@@ -1,29 +1,29 @@
 package com.gv.desafio.data
 
 data class Git (
-        val userName : String,
-        val sobreName: String,
-        val reposiName: String,
-        val reposiText: String,
-        val starIcon: Boolean,
-        val gitIcon: Boolean,
-        val nGit: String,
-        val nStar: String,
-        val imgIcon: Boolean)
+        val userName_Git : String,
+        val sobreName_Git: String,
+        val repositorioName_Git: String,
+        val repositorioText_Git: String,
+        val starIcon_Git: Boolean,
+        val gitIcon_Git: Boolean,
+        val numeroGit_Git: String,
+        val numeroStar_Git: String,
+        val imagemgIcon_Git: Boolean)
 
 
 class GitBuilder{
-    var userName : String=""
-    var sobreName: String=""
-    var reposiName: String=""
-    var reposiText: String=""
-    var starIcon: Boolean=false
-    var gitIcon: Boolean=false
-    var nGit: String=""
-    var nStar: String=""
-    var imgIcon: Boolean=true
+    var userName_Git : String=""
+    var sobreName_Git: String=""
+    var repositorioName_Git: String=""
+    var repositorioText_Git: String=""
+    var starIcon_Git: Boolean=false
+    var gitIcon_Git: Boolean=false
+    var numeroGit_Git: String=""
+    var numeroStar_Git: String=""
+    var imagemIcon_Git: Boolean=true
 
-    fun build() : Git= Git(userName,reposiName,sobreName,reposiText,starIcon,gitIcon,nGit, nStar, imgIcon)
+    fun build() : Git= Git(userName_Git,repositorioName_Git,sobreName_Git,repositorioText_Git,starIcon_Git,gitIcon_Git,numeroGit_Git, numeroStar_Git, imagemIcon_Git)
 
 }
 

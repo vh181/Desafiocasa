@@ -23,7 +23,7 @@ class GitAdapter( private val  git: MutableList<Git>) : RecyclerView.Adapter<Git
 
 
     inner class GitViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var imagIcon_GitAdapter: ImageView = itemView.findViewById(R.id.imgIcon_xml)
+        var imagemIcon_GitAdapter: ImageView = itemView.findViewById(R.id.imagemIcon_xml)
         var userName_GitAdapter: TextView = itemView.findViewById(R.id.userName_xml)
         var sobreName_GitAdapter: TextView = itemView.findViewById(R.id.sobreName_xml)
         var repositorioName_GitAdapter: TextView = itemView.findViewById(R.id.repositorioName_xml)
@@ -33,7 +33,7 @@ class GitAdapter( private val  git: MutableList<Git>) : RecyclerView.Adapter<Git
         var gitIcon_GitAdapter: ImageView = itemView.findViewById(R.id.gitIcon_xml)
         var starIcon_GitAdapter: ImageView = itemView.findViewById(R.id.starIcon_xml)
         fun bind() {
-            imagIcon_GitAdapter.setImageResource(R.drawable.usuario)
+            imagemIcon_GitAdapter.setImageResource(R.drawable.usuario)
             userName_GitAdapter.text
         }
 
