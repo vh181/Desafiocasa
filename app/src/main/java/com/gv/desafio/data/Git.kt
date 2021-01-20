@@ -1,7 +1,7 @@
 package com.gv.desafio.data
 
-data class Git (
-        val userName_Git : String,
+data class Git(
+        val userName_Git: String,
         val sobreName_Git: String,
         val repositorioName_Git: String,
         val repositorioText_Git: String,
@@ -12,24 +12,24 @@ data class Git (
         val imagemgIcon_Git: Boolean)
 
 
-class GitBuilder{
-    var userName_Git : String=""
-    var sobreName_Git: String=""
-    var repositorioName_Git: String=""
-    var repositorioText_Git: String=""
-    var starIcon_Git: Boolean=false
-    var gitIcon_Git: Boolean=false
-    var numeroGit_Git: String=""
-    var numeroStar_Git: String=""
-    var imagemIcon_Git: Boolean=true
+class GitBuilder {
+    var userName_Git: String = ""
+    var sobreName_Git: String = ""
+    var repositorioName_Git: String = ""
+    var repositorioText_Git: String = ""
+    var starIcon_Git: Boolean = false
+    var gitIcon_Git: Boolean = false
+    var numeroGit_Git: String = ""
+    var numeroStar_Git: String = ""
+    var imagemIcon_Git: Boolean = true
 
-    fun build() : Git= Git(userName_Git,repositorioName_Git,sobreName_Git,repositorioText_Git,starIcon_Git,gitIcon_Git,numeroGit_Git, numeroStar_Git, imagemIcon_Git)
+    fun build(): Git = Git(userName_Git, repositorioName_Git, sobreName_Git, repositorioText_Git, starIcon_Git, gitIcon_Git, numeroGit_Git, numeroStar_Git, imagemIcon_Git)
 
 }
 
-fun git(block: GitBuilder.()-> Unit): Git=GitBuilder().apply(block).build()
+fun git(block: GitBuilder.() -> Unit): Git = GitBuilder().apply(block).build()
 
-fun fakeGit():MutableList<Git> = mutableListOf(
+fun fakeGit(): MutableList<Git> = mutableListOf(
         git {
             userName_Git = "Victor Hugo"
             sobreName_Git = "Andrade Diniz de Araujo"
@@ -37,7 +37,7 @@ fun fakeGit():MutableList<Git> = mutableListOf(
             repositorioText_Git = " Licença Padrão ENAP::É permitida a reprodução e a exibição para uso educacional ou informativo, desde que respeitado o crédito ao autor original e citada a fonte (http://www.enap.gov.br). Permitida a inclusão da obra em Repositórios ou Portais de Acesso Aberto, desde que fique claro para os usuários esses “termos de uso”"
             starIcon_Git = true
             gitIcon_Git = true
-            imagemIcon_Git= true
+            imagemIcon_Git = true
             numeroGit_Git = "55"
             numeroStar_Git = "99"
 

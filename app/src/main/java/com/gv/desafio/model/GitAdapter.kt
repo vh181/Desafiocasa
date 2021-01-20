@@ -10,7 +10,7 @@ import com.gv.desafio.R
 import com.gv.desafio.data.Git
 import kotlinx.android.synthetic.main.item_git.view.*
 
-class GitAdapter( private val  git: MutableList<Git>) : RecyclerView.Adapter<GitAdapter.GitViewHolder>() {
+class GitAdapter(private val git: MutableList<Git>) : RecyclerView.Adapter<GitAdapter.GitViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_git, parent, false)
@@ -18,8 +18,6 @@ class GitAdapter( private val  git: MutableList<Git>) : RecyclerView.Adapter<Git
     }
 
     override fun getItemCount(): Int = git.size
-
-
 
 
     inner class GitViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -33,18 +31,25 @@ class GitAdapter( private val  git: MutableList<Git>) : RecyclerView.Adapter<Git
         var gitIcon_GitAdapter: ImageView = itemView.findViewById(R.id.gitIcon_xml)
         var starIcon_GitAdapter: ImageView = itemView.findViewById(R.id.starIcon_xml)
         fun bind(git: Git) {
-            with(git){ imagemIcon_GitAdapter.setImageResource(R.drawable.usuario)
-                userName_GitAdapter.text= userName_Git
+            with(git) {
+                imagemIcon_GitAdapter.setImageResource(R.drawable.usuario)
+                userName_GitAdapter.text = userName_Git
+                sobreName_GitAdapter.text = sobreName_Git
+                repositorioName_GitAdapter.text = repositorioName_Git
+                reposiorioText_GitAdapter.text = repositorioText_Git
+                numeroGit_GitAdapter.text = numeroGit_Git
+                numeroStar_GitAdapter.text = numeroStar_Git
+                gitIcon_GitAdapter.setImageResource(R.drawable.ic_share)
+                starIcon_GitAdapter.setImageResource(R.drawable.ic_star)
+
 
             }
 
         }
 
 
+    }
 
-
-
-}
     override fun onBindViewHolder(holder: GitViewHolder, position: Int) {
         holder.bind(git[position])
 
