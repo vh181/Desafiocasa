@@ -8,8 +8,8 @@
     tools:showIn="@layout/main_activity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="395dp"
-        android:layout_height="76dp"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -29,50 +29,53 @@
 
         <TextView
             android:id="@+id/userName_xml"
-            android:layout_width="72dp"
-            android:layout_height="19dp"
-            android:layout_below="@id/img_icon"
-            android:layout_alignStart="@id/img_icon"
+            android:layout_width="60dp"
+            android:layout_height="21dp"
             android:layout_marginEnd="4dp"
             android:textColor="@color/azul"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_icon"
+            app:layout_constraintTop_toBottomOf="@+id/imagemIcon_xml"
             app:layout_constraintVertical_bias="0.0"
             tools:text="username" />
 
         <TextView
             android:id="@+id/sobreName_xml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/user_name"
-            android:layout_alignStart="@id/img_icon"
+            android:layout_width="61dp"
+            android:layout_height="14dp"
             android:singleLine="true"
             android:textColor="@color/gray"
             android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/userName_xml"
+            app:layout_constraintTop_toBottomOf="@+id/userName_xml"
             tools:text="Nome Sobrenome" />
 
         <TextView
             android:id="@+id/repositorioName_xml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_toStartOf="@id/img_icon"
+            android:layout_width="314dp"
+            android:layout_height="24dp"
             android:textColor="@color/azul2"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imagemIcon_xml"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             tools:text="Nome Repositório" />
 
         <TextView
             android:id="@+id/repositorioText_xml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/reposi_name"
-            android:layout_alignStart="@id/reposi_name"
-            android:layout_toStartOf="@id/img_icon"
+            android:layout_width="314dp"
+            android:layout_height="23dp"
+
             android:singleLine="true"
             android:textColor="@color/black"
             android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imagemIcon_xml"
+            app:layout_constraintTop_toBottomOf="@+id/repositorioName_xml"
+            app:layout_constraintVertical_bias="0.0"
             tools:text="Os usuários ou utilizadores são pessoas ou organizações que utilizam um determinado tipo de serviço e podem ser classificados segundo a área de interesse." />
 
         <ImageView
@@ -81,44 +84,59 @@
             android:layout_height="15dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/userName_xml"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
             tools:src="@drawable/ic_star" />
 
         <ImageView
             android:id="@+id/gitIcon_xml"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_alignStart="@id/reposi_name"
+
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="7dp"
-            android:layout_marginLeft="23dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/userName_xml"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
             tools:src="@drawable/ic_share" />
 
         <TextView
             android:id="@+id/numeroGit_xml"
-            android:layout_width="264dp"
-            android:layout_height="wrap_content"
+            android:layout_width="46dp"
+            android:layout_height="23dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="38dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="5dp"
-            android:layout_toStartOf="@id/img_icon"
+            android:layout_marginTop="8dp"
             android:textAllCaps="true"
             android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sobreName_xml"
+            app:layout_constraintHorizontal_bias="0.198"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
+            app:layout_constraintVertical_bias="0.69"
             tools:text="640" />
 
         <TextView
             android:id="@+id/numeroStar_xml"
-            android:layout_width="217dp"
-            android:layout_height="wrap_content"
+            android:layout_width="41dp"
+            android:layout_height="20dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="1dp"
-            android:layout_toStartOf="@id/img_icon"
+            android:layout_marginTop="8dp"
             android:textAllCaps="true"
             android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/userName_xml"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
             tools:text="98" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
