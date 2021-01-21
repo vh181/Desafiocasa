@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toobar"
-            app:titleTextColor="@color/white"
-            app:title="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/black"
             app:popupTheme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            app:title="@string/app_name"
+            app:titleTextColor="@color/white">
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -29,7 +30,7 @@
             android:layout_below="@id/app_bar"
             android:background="@color/white"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            tools:listitem="@layout/item_git" />
+            tools:listitem="@layout/repository_list_item" />
 
     </com.google.android.material.appbar.AppBarLayout>
 </RelativeLayout>

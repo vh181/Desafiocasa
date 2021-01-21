@@ -23,7 +23,7 @@ class RepositoryBuilder {
     var numberStar_Repository: String = ""
     var imageIcon_Repository: Boolean = true
 
-    fun build(): Repository = Repository(userName_Repository, surName_Repository,repositoryName_Repository,  repositoryText_Repository, starIcon_Repository, gitIcon_Repository, numberGit_Repository, numberStar_Repository, imageIcon_Repository)
+    fun build(): Repository = Repository(userName_Repository, surName_Repository, repositoryName_Repository, repositoryText_Repository, starIcon_Repository, gitIcon_Repository, numberGit_Repository, numberStar_Repository, imageIcon_Repository)
 
 }
 

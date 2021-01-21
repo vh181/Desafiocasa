@@ -9,12 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.gv.desafio.R
 
 import com.gv.desafio.data.Repository
-import kotlinx.android.synthetic.main.item_git.view.*
 
 class RepositoryAdapter(private val repository: MutableList<Repository>) : RecyclerView.Adapter<RepositoryAdapter.GitViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_git, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.repository_list_item, parent, false)
         return GitViewHolder(view)
     }
 
