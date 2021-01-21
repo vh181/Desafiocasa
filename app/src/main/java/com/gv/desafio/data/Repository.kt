@@ -1,29 +1,29 @@
 package com.gv.desafio.data
 
-data class Git(
-        val userName_Git: String,
-        val sobreName_Git: String,
-        val repositorioName_Git: String,
-        val repositorioText_Git: String,
-        val starIcon_Git: Boolean,
-        val gitIcon_Git: Boolean,
-        val numeroGit_Git: String,
-        val numeroStar_Git: String,
-        val imagemgIcon_Git: Boolean)
+data class Repository(
+        val userName_Repository: String,
+        val sobreName_Repository: String,
+        val repositorioName_Repository: String,
+        val repositorioText_Repository: String,
+        val starIcon_Repository: Boolean,
+        val gitIcon_Repository: Boolean,
+        val numeroGit_Repository: String,
+        val numeroStar_Repository: String,
+        val imagemgIcon_Repository: Boolean)
 
 
-class GitBuilder {
-    var userName_Git: String = ""
-    var sobreName_Git: String = ""
-    var repositorioName_Git: String = ""
-    var repositorioText_Git: String = ""
-    var starIcon_Git: Boolean = false
-    var gitIcon_Git: Boolean = false
-    var numeroGit_Git: String = ""
-    var numeroStar_Git: String = ""
-    var imagemIcon_Git: Boolean = true
+class RepositoryBuilder {
+    var userName_Repository: String = ""
+    var sobreName_Repository: String = ""
+    var repositorioName_Repository: String = ""
+    var repositorioText_Repository: String = ""
+    var starIcon_Repository: Boolean = false
+    var gitIcon_Repository: Boolean = false
+    var numeroGit_Repository: String = ""
+    var numeroStar_Repository: String = ""
+    var imagemIcon_Repository: Boolean = true
 
-    fun build(): Git = Git(userName_Git, sobreName_Git,repositorioName_Git,  repositorioText_Git, starIcon_Git, gitIcon_Git, numeroGit_Git, numeroStar_Git, imagemIcon_Git)
+    fun build(): Repository = Repository(userName_Repository, sobreName_Repository,repositorioName_Repository,  repositorioText_Repository, starIcon_Repository, gitIcon_Repository, numeroGit_Repository, numeroStar_Repository, imagemIcon_Repository)
 
 }
 

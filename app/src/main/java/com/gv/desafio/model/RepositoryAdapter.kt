@@ -10,7 +10,7 @@ import com.gv.desafio.R
 import com.gv.desafio.data.Git
 import kotlinx.android.synthetic.main.item_git.view.*
 
-class GitAdapter(private val git: MutableList<Git>) : RecyclerView.Adapter<GitAdapter.GitViewHolder>() {
+class RepositoryAdapter(private val git: MutableList<Git>) : RecyclerView.Adapter<RepositoryAdapter.GitViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_git, parent, false)
@@ -21,15 +21,15 @@ class GitAdapter(private val git: MutableList<Git>) : RecyclerView.Adapter<GitAd
 
 
     inner class GitViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var imagemIcon_GitAdapter: ImageView = itemView.findViewById(R.id.imagemIcon_xml)
-        var userName_GitAdapter: TextView = itemView.findViewById(R.id.userName_xml)
-        var sobreName_GitAdapter: TextView = itemView.findViewById(R.id.sobreName_xml)
-        var repositorioName_GitAdapter: TextView = itemView.findViewById(R.id.repositorioName_xml)
-        var reposiorioText_GitAdapter: TextView = itemView.findViewById(R.id.repositorioText_xml)
-        var numeroGit_GitAdapter: TextView = itemView.findViewById(R.id.numeroGit_xml)
-        var numeroStar_GitAdapter: TextView = itemView.findViewById(R.id.numeroStar_xml)
-        var gitIcon_GitAdapter: ImageView = itemView.findViewById(R.id.gitIcon_xml)
-        var starIcon_GitAdapter: ImageView = itemView.findViewById(R.id.starIcon_xml)
+        var imagemIcon_GitAdapter: ImageView = itemView.findViewById(R.id.imageIcon)
+        var userName_GitAdapter: TextView = itemView.findViewById(R.id.userName)
+        var sobreName_GitAdapter: TextView = itemView.findViewById(R.id.surName)
+        var repositorioName_GitAdapter: TextView = itemView.findViewById(R.id.repositoryName)
+        var reposiorioText_GitAdapter: TextView = itemView.findViewById(R.id.repositoryText)
+        var numeroGit_GitAdapter: TextView = itemView.findViewById(R.id.numberGit)
+        var numeroStar_GitAdapter: TextView = itemView.findViewById(R.id.numberStar)
+        var gitIcon_GitAdapter: ImageView = itemView.findViewById(R.id.gitIcon)
+        var starIcon_GitAdapter: ImageView = itemView.findViewById(R.id.starIcon)
         fun bind(git: Git) {
             with(git) {
                 imagemIcon_GitAdapter.setImageResource(R.drawable.usuario)
