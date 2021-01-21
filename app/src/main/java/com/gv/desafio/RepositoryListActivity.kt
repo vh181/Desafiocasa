@@ -12,7 +12,7 @@ class RepositoryListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
+        setContentView(R.layout.repository_list_activity)
 
 
         recycler_view_main.adapter = RepositoryAdapter(fakeRepository())
