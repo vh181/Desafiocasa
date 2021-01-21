@@ -7,10 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.gv.desafio.R
-import com.gv.desafio.data.Git
+
+import com.gv.desafio.data.Repository
 import kotlinx.android.synthetic.main.item_git.view.*
 
-class RepositoryAdapter(private val git: MutableList<Git>) : RecyclerView.Adapter<RepositoryAdapter.GitViewHolder>() {
+class RepositoryAdapter(private val git: MutableList<Repository>) : RecyclerView.Adapter<RepositoryAdapter.GitViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_git, parent, false)
@@ -30,7 +31,7 @@ class RepositoryAdapter(private val git: MutableList<Git>) : RecyclerView.Adapte
         var numeroStar_GitAdapter: TextView = itemView.findViewById(R.id.numberStar)
         var gitIcon_GitAdapter: ImageView = itemView.findViewById(R.id.gitIcon)
         var starIcon_GitAdapter: ImageView = itemView.findViewById(R.id.starIcon)
-        fun bind(git: Git) {
+        fun bind(git: Repository) {
             with(git) {
                 imagemIcon_GitAdapter.setImageResource(R.drawable.usuario)
                 userName_GitAdapter.text = userName_Git

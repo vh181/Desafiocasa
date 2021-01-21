@@ -27,10 +27,10 @@ class RepositoryBuilder {
 
 }
 
-fun git(block: RepositoryBuilder.() -> Unit): Repository = RepositoryBuilder().apply(block).build()
+fun repository(block: RepositoryBuilder.() -> Unit): Repository = RepositoryBuilder().apply(block).build()
 
-fun fakeGit(): MutableList<Repository> = mutableListOf(
-        git {
+fun fakeRepository(): MutableList<Repository> = mutableListOf(
+        repository {
             userName_Repository = "Victor Hugo"
             surName_Repository = "Andrade Diniz de Araujo"
             repositoryName_Repository = "Desafio do carlos"
@@ -42,7 +42,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "99"
 
         },
-        git {
+        repository {
             userName_Repository = "Amanda"
             surName_Repository = "Andrade Diniz de Araujo"
             repositoryName_Repository = "Carlos"
@@ -54,7 +54,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "199"
 
         },
-        git {
+        repository {
             userName_Repository = "Ana Carla"
             surName_Repository = "Andrade Diniz de Araujo"
             repositoryName_Repository = "Desafio"
@@ -66,7 +66,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "129"
 
         },
-        git {
+        repository {
             userName_Repository = "Cleber"
             surName_Repository = "Andrade Diniz de Araujo"
             repositoryName_Repository = "Estudo"
@@ -78,7 +78,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "299"
 
         },
-        git {
+        repository {
             userName_Repository = "Pipoca"
             surName_Repository = "Andrade Diniz de Araujo"
             repositoryName_Repository = "Comida"
@@ -90,7 +90,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "49"
 
         },
-        git {
+        repository {
             userName_Repository = "Carlos"
             surName_Repository = "Gente Fina"
             repositoryName_Repository = "Loucura"
@@ -102,7 +102,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "200"
 
         },
-        git {
+        repository {
             userName_Repository = "Bruno"
             surName_Repository = "Araujo"
             repositoryName_Repository = "Pratos de Comida"
@@ -114,7 +114,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "599"
 
         },
-        git {
+        repository {
             userName_Repository = "Jerson"
             surName_Repository = "Diniz"
             repositoryName_Repository = "Eletricidade"
@@ -126,7 +126,7 @@ fun fakeGit(): MutableList<Repository> = mutableListOf(
             numberStar_Repository = "37"
 
         },
-        git {
+        repository {
             userName_Repository = "Kaio"
             surName_Repository = "Araujo"
             repositoryName_Repository = "Desafio do carlos"
