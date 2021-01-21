@@ -3,10 +3,11 @@ package com.gv.desafio
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.gv.desafio.data.fakeRepository
 
 import com.gv.desafio.model.RepositoryAdapter
-import kotlinx.android.synthetic.main.main_activity.*
+
 
 class RepositoryListActivity : AppCompatActivity() {
 
@@ -14,8 +15,11 @@ class RepositoryListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.repository_list_activity)
 
+        var recyclerViewRepositoryActivity: RecyclerView = findViewById(R.id.recycler_view_main)
 
-        recycler_view_main.adapter = RepositoryAdapter(fakeRepository())
-        recycler_view_main.layoutManager = LinearLayoutManager(this)
+
+        recyclerViewRepositoryActivity.adapter = RepositoryAdapter(fakeRepository())
+        recyclerViewRepositoryActivity.layoutManager = LinearLayoutManager(this)
+
     }
 }
