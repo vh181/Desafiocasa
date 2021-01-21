@@ -9,19 +9,19 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="86dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp">
+        android:layout_height="@dimen/height_constraintlayout"
+        android:layout_marginStart="@dimen/marginStart_constraintlayout"
+        android:layout_marginTop="@dimen/marginTop_constraintlayout"
+        android:layout_marginEnd="@dimen/marginEnd_constraintlayout"
+        android:layout_marginBottom="@dimen/marginBonttom_constraintlayout">
 
         <ImageView
             android:id="@+id/imagemIcon_xml"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/width_imagemIcon"
+            android:layout_height="@dimen/heigth_imagemIcon"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/marginEnd_imagemIcon"
             android:background="@drawable/circle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -29,11 +29,11 @@
 
         <TextView
             android:id="@+id/userName_xml"
-            android:layout_width="60dp"
-            android:layout_height="21dp"
-            android:layout_marginEnd="4dp"
+            android:layout_width="@dimen/width_userName"
+            android:layout_height="@dimen/heigth_userName"
+            android:layout_marginEnd="@dimen/marginEnd_userName"
             android:textColor="@color/azul"
-            android:textSize="16sp"
+            android:textSize="@dimen/textSize_userName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imagemIcon_xml"
@@ -42,11 +42,11 @@
 
         <TextView
             android:id="@+id/sobreName_xml"
-            android:layout_width="61dp"
-            android:layout_height="14dp"
+            android:layout_width="@dimen/width_surName"
+            android:layout_height="@dimen/heigth_surName"
             android:singleLine="true"
             android:textColor="@color/gray"
-            android:textSize="9sp"
+            android:textSize="@dimen/textSize_surName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/userName_xml"
             app:layout_constraintTop_toBottomOf="@+id/userName_xml"
@@ -54,8 +54,8 @@
 
         <TextView
             android:id="@+id/repositorioName_xml"
-            android:layout_width="314dp"
-            android:layout_height="24dp"
+            android:layout_width="@dimen/width_repositoryName"
+            android:layout_height="@dimen/heigth_repositoryName"
             android:textColor="@color/azul2"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -66,12 +66,11 @@
 
         <TextView
             android:id="@+id/repositorioText_xml"
-            android:layout_width="314dp"
-            android:layout_height="23dp"
-
+            android:layout_width="@dimen/width_repositoryText"
+            android:layout_height="@dimen/height__repositoryText"
             android:singleLine="true"
             android:textColor="@color/black"
-            android:textSize="9sp"
+            android:textSize="@dimen/textSize_repositoryText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imagemIcon_xml"
             app:layout_constraintTop_toBottomOf="@+id/repositorioName_xml"
@@ -80,12 +79,12 @@
 
         <ImageView
             android:id="@+id/starIcon_xml"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="@dimen/width_starIcon"
+            android:layout_height="@dimen/heigth_starIcon"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginTop="@dimen/marginTop_starIcon"
+            android:layout_marginEnd="@dimen/marginEnd_starIcon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/userName_xml"
             app:layout_constraintHorizontal_bias="0.3"
@@ -95,12 +94,11 @@
 
         <ImageView
             android:id="@+id/gitIcon_xml"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-
+            android:layout_width="@dimen/width_gitIcon"
+            android:layout_height="@dimen/height_gitIcon"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginTop="@dimen/marginTop_gitIcon"
+            android:layout_marginEnd="@dimen/marginEnd_gitIcon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/userName_xml"
             app:layout_constraintHorizontal_bias="0.13"
@@ -110,10 +108,10 @@
 
         <TextView
             android:id="@+id/numeroGit_xml"
-            android:layout_width="46dp"
-            android:layout_height="23dp"
+            android:layout_width="@dimen/width_numberGit"
+            android:layout_height="@dimen/heigth_numberGit"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/marginTop_numberGit"
             android:textAllCaps="true"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -126,10 +124,10 @@
 
         <TextView
             android:id="@+id/numeroStar_xml"
-            android:layout_width="41dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/width_numberStar"
+            android:layout_height="@dimen/height_numberStar"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/marginTop_numberStar"
             android:textAllCaps="true"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
