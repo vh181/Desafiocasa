@@ -16,19 +16,19 @@
         android:layout_marginBottom="@dimen/marginBonttom_constraintlayout">
 
         <ImageView
-            android:id="@+id/imagemIcon_xml"
-            android:layout_width="@dimen/width_imagemIcon"
-            android:layout_height="@dimen/heigth_imagemIcon"
+            android:id="@+id/imageIcon"
+            android:layout_width="@dimen/width_imageIcon"
+            android:layout_height="@dimen/heigth_imageIcon"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="@dimen/marginEnd_imagemIcon"
+            android:layout_marginEnd="@dimen/marginEnd_imageIcon"
             android:background="@drawable/circle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/usuario" />
 
         <TextView
-            android:id="@+id/userName_xml"
+            android:id="@+id/userName"
             android:layout_width="@dimen/width_userName"
             android:layout_height="@dimen/heigth_userName"
             android:layout_marginEnd="@dimen/marginEnd_userName"
@@ -36,49 +36,49 @@
             android:textSize="@dimen/textSize_userName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imagemIcon_xml"
+            app:layout_constraintTop_toBottomOf="@+id/imageIcon"
             app:layout_constraintVertical_bias="0.0"
             tools:text="username" />
 
         <TextView
-            android:id="@+id/sobreName_xml"
+            android:id="@+id/surName"
             android:layout_width="@dimen/width_surName"
             android:layout_height="@dimen/heigth_surName"
             android:singleLine="true"
             android:textColor="@color/gray"
             android:textSize="@dimen/textSize_surName"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/userName_xml"
-            app:layout_constraintTop_toBottomOf="@+id/userName_xml"
+            app:layout_constraintEnd_toEndOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
             tools:text="Nome Sobrenome" />
 
         <TextView
-            android:id="@+id/repositorioName_xml"
+            android:id="@+id/repositoryName"
             android:layout_width="@dimen/width_repositoryName"
             android:layout_height="@dimen/heigth_repositoryName"
             android:textColor="@color/azul2"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imagemIcon_xml"
+            app:layout_constraintEnd_toStartOf="@+id/imageIcon"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             tools:text="Nome Repositório" />
 
         <TextView
-            android:id="@+id/repositorioText_xml"
+            android:id="@+id/repositoryText"
             android:layout_width="@dimen/width_repositoryText"
             android:layout_height="@dimen/height__repositoryText"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textSize="@dimen/textSize_repositoryText"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imagemIcon_xml"
-            app:layout_constraintTop_toBottomOf="@+id/repositorioName_xml"
+            app:layout_constraintEnd_toStartOf="@+id/imageIcon"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryName"
             app:layout_constraintVertical_bias="0.0"
             tools:text="Os usuários ou utilizadores são pessoas ou organizações que utilizam um determinado tipo de serviço e podem ser classificados segundo a área de interesse." />
 
         <ImageView
-            android:id="@+id/starIcon_xml"
+            android:id="@+id/starIcon"
             android:layout_width="@dimen/width_starIcon"
             android:layout_height="@dimen/heigth_starIcon"
             android:layout_alignParentLeft="true"
@@ -86,28 +86,28 @@
             android:layout_marginTop="@dimen/marginTop_starIcon"
             android:layout_marginEnd="@dimen/marginEnd_starIcon"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/userName_xml"
+            app:layout_constraintEnd_toStartOf="@+id/userName"
             app:layout_constraintHorizontal_bias="0.3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
             tools:src="@drawable/ic_star" />
 
         <ImageView
-            android:id="@+id/gitIcon_xml"
+            android:id="@+id/gitIcon"
             android:layout_width="@dimen/width_gitIcon"
             android:layout_height="@dimen/height_gitIcon"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="@dimen/marginTop_gitIcon"
             android:layout_marginEnd="@dimen/marginEnd_gitIcon"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/userName_xml"
+            app:layout_constraintEnd_toStartOf="@+id/userName"
             app:layout_constraintHorizontal_bias="0.13"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
             tools:src="@drawable/ic_share" />
 
         <TextView
-            android:id="@+id/numeroGit_xml"
+            android:id="@+id/numberGit"
             android:layout_width="@dimen/width_numberGit"
             android:layout_height="@dimen/heigth_numberGit"
             android:layout_alignParentBottom="true"
@@ -115,15 +115,15 @@
             android:textAllCaps="true"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sobreName_xml"
+            app:layout_constraintEnd_toStartOf="@+id/surName"
             app:layout_constraintHorizontal_bias="0.198"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
             app:layout_constraintVertical_bias="0.69"
             tools:text="640" />
 
         <TextView
-            android:id="@+id/numeroStar_xml"
+            android:id="@+id/numberStar"
             android:layout_width="@dimen/width_numberStar"
             android:layout_height="@dimen/height_numberStar"
             android:layout_alignParentBottom="true"
@@ -131,10 +131,10 @@
             android:textAllCaps="true"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/userName_xml"
+            app:layout_constraintEnd_toStartOf="@+id/surName"
             app:layout_constraintHorizontal_bias="0.37"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/repositorioText_xml"
+            app:layout_constraintTop_toBottomOf="@+id/repositoryText"
             tools:text="98" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -5,9 +5,9 @@
     <dimen name="marginTop_constraintlayout">8dp</dimen>
     <dimen name="marginEnd_constraintlayout">16dp</dimen>
     <dimen name="marginBonttom_constraintlayout">16dp</dimen>
-    <dimen name="width_imagemIcon">48dp</dimen>
-    <dimen name="heigth_imagemIcon">48dp</dimen>
-    <dimen name="marginEnd_imagemIcon">16dp</dimen>
+    <dimen name="width_imageIcon">48dp</dimen>
+    <dimen name="heigth_imageIcon">48dp</dimen>
+    <dimen name="marginEnd_imageIcon">16dp</dimen>
     <dimen name="width_userName">60dp</dimen>
     <dimen name="heigth_userName">21dp</dimen>
     <dimen name="marginEnd_userName">4dp</dimen>
