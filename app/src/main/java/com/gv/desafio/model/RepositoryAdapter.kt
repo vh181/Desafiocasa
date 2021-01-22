@@ -32,7 +32,7 @@ class RepositoryAdapter(private val repository: MutableList<Repository>) : Recyc
         var starIconRepositoryAdapter: ImageView = itemView.findViewById(R.id.starIcon)
         fun bind(git: Repository) {
             with(git) {
-                imageIconRepositoryAdapter.setImageResource(R.drawable.usuario)
+                imageIconRepositoryAdapter.setImageResource(R.drawable.user)
                 userNameRepositoryAdapter.text = userNameRepository
                 surNameRepositoryAdapter.text = surNameRepository
                 repositoryNameRepositoryAdapter.text = repositoryNameRepository
