@@ -1,6 +1,9 @@
 package com.gv.desafio.data
 
+import com.google.gson.annotations.SerializedName
+
 data class Repository(
+        @SerializedName("userNameRepository")
         val userNameRepository: String,
         val surNameRepository: String,
         val repositoryNameRepository: String,
