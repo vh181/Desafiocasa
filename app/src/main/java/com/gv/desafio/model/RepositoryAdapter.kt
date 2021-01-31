@@ -5,8 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.gv.desafio.R
+import com.gv.desafio.api.Post
 
 import com.gv.desafio.data.Repository
 
@@ -53,5 +55,9 @@ class RepositoryAdapter(private val repository: MutableList<Repository>) : Recyc
     override fun onBindViewHolder(holder: GitViewHolder, position: Int) {
         holder.bind(repository[position])
 
+    }
+val myResponse: MutableLiveData<Post> = MutableLiveData()
+    fun getPost(){
+        
     }
 }

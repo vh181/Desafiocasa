@@ -1,6 +1,13 @@
 package com.gv.desafio.data
 
 import com.google.gson.annotations.SerializedName
+import com.gv.desafio.api.Post
+import com.gv.desafio.api.RetrofitInstance
+
+
+suspend fun getPost(): Post{
+    return RetrofitInstance.api.getPost()
+}
 
 data class Repository(
         @SerializedName("userNameRepository")
