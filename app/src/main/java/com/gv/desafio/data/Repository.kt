@@ -5,9 +5,7 @@ import com.gv.desafio.api.Post
 import com.gv.desafio.api.RetrofitInstance
 
 
-suspend fun getPost(): Post{
-    return RetrofitInstance.api.getPost()
-}
+
 
 data class Repository(
         @SerializedName("userNameRepository")
@@ -38,7 +36,6 @@ class RepositoryBuilder {
 }
 
 fun repository(block: RepositoryBuilder.() -> Unit): Repository = RepositoryBuilder().apply(block).build()
-
 fun fakeRepository(): MutableList<Repository> = mutableListOf(
         repository {
             userNameRepository = "Victor Hugo"
@@ -151,3 +148,9 @@ fun fakeRepository(): MutableList<Repository> = mutableListOf(
 
 
 )
+class Repositori{
+
+    suspend fun getPost(): Post{
+        return RetrofitInstance.api.getPost()
+    }
+}
