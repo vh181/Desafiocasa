@@ -1,10 +1,6 @@
 package com.gv.desafio.data
 
 import com.google.gson.annotations.SerializedName
-import com.gv.desafio.api.Post
-import com.gv.desafio.api.RetrofitInstance
-
-
 
 
 data class Post(
