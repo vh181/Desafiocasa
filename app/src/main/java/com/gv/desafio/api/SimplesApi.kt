@@ -1,5 +1,6 @@
 package com.gv.desafio.api
 
+import com.gv.desafio.data.Post
 import retrofit2.http.GET
 
 interface SimplesApi {

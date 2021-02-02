@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.RecyclerView
 import com.gv.desafio.R
+import com.gv.desafio.data.Post
 
 import com.gv.desafio.data.Repository
 import kotlinx.coroutines.launch
@@ -63,7 +64,7 @@ val myResponse: MutableLiveData<Post> = MutableLiveData()
 
     fun getPost(){
       viewModelScope.launch {
-val response : Post =
+val response : Post = repository.getPost()
       }
     }
 }
