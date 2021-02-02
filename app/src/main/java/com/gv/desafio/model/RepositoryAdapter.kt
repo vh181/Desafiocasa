@@ -15,14 +15,14 @@ import com.gv.desafio.api.Post
 import com.gv.desafio.data.Repository
 import kotlinx.coroutines.launch
 
-class RepositoryAdapter(private val repositori: MutableList<Repository>) : ViewModel() {
+class RepositoryAdapter(private val repository: MutableList<Repository>) : ViewModel() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitViewHolder {
+    fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.repository_list_item, parent, false)
         return GitViewHolder(view)
     }
 
-    override fun getItemCount(): Int = repository.size
+    fun getItemCount(): Int = repository.size
 
 
     inner class GitViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -55,14 +55,14 @@ class RepositoryAdapter(private val repositori: MutableList<Repository>) : ViewM
 
     }
 
-    override fun onBindViewHolder(holder: GitViewHolder, position: Int) {
+    fun onBindViewHolder(holder: GitViewHolder, position: Int) {
         holder.bind(repository[position])
 
     }
 val myResponse: MutableLiveData<Post> = MutableLiveData()
     fun getPost(){
       viewModelScope.launch {
-          val response = repositori.
+
       }
     }
 }
