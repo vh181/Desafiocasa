@@ -62,7 +62,7 @@ class RepositoryAdapter(private val repository: MutableList<Repository>) : ViewM
 val myResponse: MutableLiveData<Post> = MutableLiveData()
     fun getPost(){
       viewModelScope.launch {
-
+val response : Post =
       }
     }
 }

@@ -7,7 +7,7 @@ import com.gv.desafio.api.RetrofitInstance
 
 
 
-data class Repository(
+data class Post(
         @SerializedName("userNameRepository")
         val userNameRepository: String,
         val surNameRepository: String,
