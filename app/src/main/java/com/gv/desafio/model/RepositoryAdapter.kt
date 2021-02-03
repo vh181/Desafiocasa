@@ -15,8 +15,15 @@ import com.gv.desafio.data.Post
 import com.gv.desafio.data.Repository
 import kotlinx.coroutines.launch
 
-class RepositoryAdapter(private val repository: MutableList<Repository>) : ViewModel() {
+class RepositoryAdapter(private val repository: Repository) : ViewModel() {
+    val myResponse: MutableLiveData<Post> = MutableLiveData()
 
+    fun getPost(){
+        viewModelScope.launch {
+            val response : Post = repository.getPost()
+            myResponse.value=response
+        }
+    }
     fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.repository_list_item, parent, false)
         return GitViewHolder(view)
@@ -60,11 +67,5 @@ class RepositoryAdapter(private val repository: MutableList<Repository>) : ViewM
 
     }
 
-val myResponse: MutableLiveData<Post> = MutableLiveData()
 
-    fun getPost(){
-      viewModelScope.launch {
-val response : Post = repository.getPost()
-      }
-    }
 }
