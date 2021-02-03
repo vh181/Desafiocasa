@@ -15,7 +15,7 @@ import com.gv.desafio.data.Post
 import com.gv.desafio.data.Repository
 import kotlinx.coroutines.launch
 
-class RepositoryAdapter(private val repository: Repository) : ViewModel() {
+class RepositoryModel(private val repository: Repository) : ViewModel() {
     val myResponse: MutableLiveData<Post> = MutableLiveData()
 
     fun getPost(){

@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.gv.desafio.data.Repository
 
 
-import com.gv.desafio.model.RepositoryAdapter
+import com.gv.desafio.model.RepositoryModel
 import com.gv.desafio.model.RepositoryViewModelFactory
 
 
 class RepositoryListActivity : AppCompatActivity() {
-private lateinit var viewModel: RepositoryAdapter
+private lateinit var viewModel: RepositoryModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.repository_list_activity)
@@ -23,11 +23,11 @@ private lateinit var viewModel: RepositoryAdapter
 
 val repository = Repository()
         val viewModelFactory = RepositoryViewModelFactory(repository)
-viewModel = ViewModelProvider(this,viewModelFactory).get(RepositoryAdapter::class.java)
+viewModel = ViewModelProvider(this,viewModelFactory).get(RepositoryModel::class.java)
         viewModel.getPost()
         viewModel.myResponse.observe(this, Observer {
         })
-        recyclerViewRepositoryActivity.adapter = RepositoryAdapter(fakeRepository())
+    //    recyclerViewRepositoryActivity.adapter = RepositoryModel(fakeRepository())
         recyclerViewRepositoryActivity.layoutManager = LinearLayoutManager(this)
 
     }
