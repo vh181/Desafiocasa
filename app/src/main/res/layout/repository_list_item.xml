@@ -127,7 +127,7 @@
             android:layout_width="@dimen/width_numberStar"
             android:layout_height="@dimen/height_numberStar"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="@dimen/margintop_numberStar"
+            android:layout_marginTop="@dimen/margin_top_numberStar"
             android:textAllCaps="true"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
