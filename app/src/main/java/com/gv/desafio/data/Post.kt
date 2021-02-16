@@ -4,8 +4,8 @@ import com.google.gson.annotations.SerializedName
 
 
 data class Post(
-        @SerializedName("userNameRepository")
-        val userNameRepository: String,
+
+        @SerializedName("userNameRepository")     val userNameRepository: String,
         val surNameRepository: String,
         val repositoryNameRepository: String,
         val repositoryTextRepository: String,
